@@ -1,0 +1,100 @@
+.product-groups {
+  font-size: 14px;
+  line-height: 21px;
+
+  &__sub-text {
+    display: block;
+    color: #61656f;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+
+  &__lsit {
+    padding: 25px 14px;
+    display: flex;
+    gap: 50px 30px;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    background-image: linear-gradient(180deg, #edf4ff 0%, rgba(237, 244, 255, 0) 100%);
+
+    @include max-w($tablets) {
+      padding: 25px 20px;
+    }
+
+    @include max-w($phones-lg) {
+      padding: 25px 10px;
+    }
+  }
+
+  &__item {
+    width: calc(50% - 15px);
+    display: flex;
+    gap: 13px;
+
+    @include max-w($tablets) {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    max-height: 100%;
+    object-position: top center;
+  }
+
+  &__info {
+
+  }
+
+  &__h3 {
+    margin-bottom: 6px;
+  }
+
+  &__h3 > * {
+    color: #2f3644;
+    font-family: $ff-open-sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  &__hide-wrapper {
+    height: 80px;
+    overflow: hidden;
+    transition: height 0.3s;
+  }
+
+  &__menu-list {
+    color: #61656f;
+    margin-bottom: 6px;
+  }
+
+  &__menu-item {
+    padding: 3px;
+  }
+
+  &__menu-link {
+    display: inline-block;
+  }
+
+  &__btn-more {
+    position: relative;
+    @include no-btn;
+    color: #9ba5ac;
+    padding-left: 30px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 22px;
+      height: 16px;
+      background-image: url(../img/icons/arrow-b.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+}

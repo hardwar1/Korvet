@@ -1,0 +1,53 @@
+<section class="offers {{offers-parent-mod}} {{offers-mod}}">
+  <div class="container">
+    <div class="offers__h2">
+      <h2>
+        Наши предложения
+      </h2>
+    </div>
+
+    <div class="offers__swiper swiper-768">
+      <ul class="offers__list">
+        {{#each offers.offers}}
+        <li class="offers__item">
+          <article class="offers__card offer-card {{mod}}">
+            <a class="offer-card__link" href="">
+              <img class="offer-card__img" src="img/offers/{{img}}.png" height="196" alt="{{alt}}">
+            </a>
+            <div class="offer-card__h3">
+              <h3>
+                {{title}}
+              </h3>
+            </div>
+
+            <span class="offer-card__price">
+              {{price}}
+            </span>
+
+            <span class="offer-card__wholesale">
+              {{wholesale}}
+            </span>
+
+            <div class="offer-card__btns">
+              <button class="offer-card__btn btn {{btn-mod}}" type="button">
+                Заказать
+              </button>
+
+              <button class="offer-card__cart cart-btn" type="button">
+                <span class="visually-hidden">
+                  добавить в корзину
+                </span>
+              </button>
+            </div>
+          </article>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    {{> slider-btns slider-btns-parent-mod="offers__slider-btns" slider-btns-mod=""}}
+
+    <button class="offers__btn long-btn long-btn--blue" type="button">
+      Смотреть все
+    </button>
+  </div>
+</section>

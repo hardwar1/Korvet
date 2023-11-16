@@ -1,0 +1,195 @@
+.footer {
+  font-family: $ff-jost;
+  &__top {
+    color: #fff;
+    background-color: #000;
+  }
+
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 20px;
+
+    @include max-w($desktops-sm) {
+      padding: 30px 0;
+    }
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    margin-right: 17px;
+  }
+
+  &__address {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 635px;
+    gap: 15px;
+  }
+
+  &__address-item {
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 11px;
+    padding-left: 22px;
+    font-size: 18px;
+    line-height: 1;
+
+    @include max-w($tablets) {
+      font-size: 15px;
+    }
+
+    @include max-w($phones-lg) {
+      display: none;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--marker {
+      position: relative;
+      font-family: $ff-open-sans;
+      font-weight: 600;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/icons/location.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding-left: 22px;
+    font-size: 18px;
+    line-height: 1;
+
+    @include max-w($tablets) {
+      padding-left: 0;
+    }
+
+    &--tel {
+      position: relative;
+      margin-bottom: 7px;
+      font-size: 24px;
+      font-weight: 600;
+
+      @include max-w($tablets) {
+        font-size: 20px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-image: url(../img/icons/tel.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        @include max-w($tablets) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__middle {
+    background-color: #000;
+    border-top: 1px solid rgba(255, 255, 255, 0.17);
+
+    @include max-w($tablets) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 22px;
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__menu-item {
+  }
+
+  &__menu-link {
+    padding: 20px 0;
+    display: block;
+  }
+
+  &__bottom {
+    padding: 25px 0;
+  }
+
+  &__bottom-inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    @include max-w($tablets) {
+      gap: 16px 13px;
+    }
+  }
+
+  &__svg16 {
+  }
+
+  &__bottom-link {
+    font-family: $ff-open-sans;
+    color: #028dd8;
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: auto;
+  }
+
+  &__brevis-logo {
+    display: block;
+    max-width: 316px;
+    width: 100%;
+    position: relative;
+    padding-left: 55px;
+
+    @include max-w($tablets) {
+      max-width: 285px;
+    }
+  }
+
+  &__brevis-img {
+    position: absolute;
+    top: -7px;
+    left: 0;
+  }
+
+  &__brevis-text {
+    font-family: $ff-roboto;
+    color: #7c7c7c;
+    font-size: 16px;
+    line-height: 1.2;
+
+    @include max-w($tablets) {
+      font-size: 14px;
+    }
+  }
+}

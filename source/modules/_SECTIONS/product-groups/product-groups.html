@@ -1,0 +1,64 @@
+<section class="product-groups {{product-groups-parent-mod}} {{product-groups-mod}}">
+  <div class="container">
+
+    <h2 class="visually-hidden">
+      Группы товаров
+    </h2>
+
+    <span class="product-groups__sub-text">
+      152 товара
+    </span>
+
+    <ul class="product-groups__lsit">
+      {{#each product-groups}}
+      <li class="product-groups__item">
+        <img class="product-groups__img " src="img/product-groups/{{img}}.png" width="132" alt="{{title}}">
+
+        <div class="product-groups__info">
+          <div class="product-groups__h3">
+            <h3>
+              {{title}}
+            </h3>
+          </div>
+
+          <div class="product-groups__hide-wrapper">
+            <ul class="product-groups__menu-list">
+              <li class="product-groups__menu-item">
+                <a class="product-groups__menu-link hovers" href="">
+                  Дюралюминий
+                </a>
+              </li>
+              <li class="product-groups__menu-item">
+                <a class="product-groups__menu-link hovers" href="">
+                  Лист
+                </a>
+              </li>
+              <li class="product-groups__menu-item">
+                <a class="product-groups__menu-link hovers" href="">
+                  Проволока
+                </a>
+              </li>
+              <li class="product-groups__menu-item">
+                <a class="product-groups__menu-link hovers" href="">
+                  Кадмий
+                </a>
+              </li>
+              <li class="product-groups__menu-item">
+                <a class="product-groups__menu-link hovers" href="">
+                  Никель
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="product-groups__btn-more hovers" type="button">
+            eщe 10
+          </button>
+
+        </div>
+      </li>
+
+      {{/each}}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,184 @@
+.certificates {
+  overflow: hidden;
+  line-height: normal;
+  font-family: $ff-jost;
+
+  @include max-w($desktops-sm) {
+    padding-bottom: 55px;
+  }
+
+  @include max-w($tablets) {
+    padding-bottom: 35px;
+  }
+
+  &__h2 > * {
+    text-align: left;
+    margin-bottom: -45px;
+    max-width: calc(100% - 480px);
+
+    @include max-w($desktops-sm) {
+      max-width: calc(100% - 380px);
+    }
+
+    @include max-w($tablets) {
+      margin-bottom: 20px;
+      max-width: unset;
+    }
+
+    @include max-w($phones-lg) {
+      text-align: center;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 55px;
+
+    @include max-w($desktops-md) {
+      gap: 0;
+    }
+
+    @include max-w($phones-lg) {
+      flex-direction: column-reverse;
+      gap: 15px;
+    }
+  }
+
+  &__info {
+    margin-top: 77px;
+    position: relative;
+    width: 100%;
+    padding: 30px 30px 30px 0;
+
+    @include max-w($tablets) {
+      margin-top: 45px;
+    }
+
+    @include max-w($phones-lg) {
+      margin-top: 0;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      width: 100vw;
+      height: 100%;
+      background-color: #0151d5;
+      border-radius: 0 8px 8px 0;
+
+      @include max-w($phones-lg) {
+        right: -10px;
+      }
+    }
+  }
+
+  &__text {
+    color: #fff;
+    font-family: $ff-jost;
+    font-size: 25px;
+    line-height: normal;
+    margin-bottom: 37px;
+
+    @include max-w($tablets) {
+      font-size: 20px;
+    }
+
+    @include max-w($phones-lg) {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__slider-wrapper {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 460px;
+
+    @include max-w($desktops-md) {
+      max-width: 440px;
+    }
+
+    @include max-w($desktops-sm) {
+      max-width: 340px;
+    }
+
+    @include max-w($phones-lg) {
+      max-width: 100%;
+    }
+  }
+
+  &__swiper {
+  }
+
+  &__slide {
+    width: 232px;
+    transform-origin: center bottom;
+
+    @include max-w($desktops-sm) {
+      width: 182px;
+    }
+
+    @include max-w($phones-lg) {
+      width: 150px;
+    }
+  }
+
+  &__item {
+    background-color: #fff;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+  }
+
+  &__h3 > * {
+    color: #101620;
+    font-size: 25px;
+    line-height: normal;
+
+    @include max-w($desktops-sm) {
+      font-size: 20px;
+    }
+
+    @include max-w($phones-lg) {
+      font-size: 15px;
+    }
+  }
+
+  .swiper-slide {
+    transition: opacity 0.3s;
+    opacity: 0.2;
+
+    .certificates__h3 {
+      transition: opacity 0.3s;
+      opacity: 0;
+    }
+  }
+
+  .swiper-slide-active {
+    opacity: 1;
+    .certificates__h3 {
+      opacity: 1;
+    }
+  }
+
+  .swiper-slide-shadow {
+    opacity: 0 !important;
+  }
+
+  &__slider-btns {
+    @include max-w($phones-lg) {
+      margin: 0 auto;
+    }
+  }
+}

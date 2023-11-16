@@ -1,0 +1,30 @@
+<section class="description {{description-parent-mod}} {{description-mod}}">
+  <div class="description__h2">
+    <h2 class="title title--400">
+      Оплата
+    </h2>
+  </div>
+
+  <ul class="description__list">
+    {{#each description.list2}}
+    <li class="description__item">
+      <button class="hide-wrapper-btn hide-wrapper-btn--plus active" type="button">
+        {{text}}
+      </button>
+
+      <div class="hide-wrapper">
+        <div class="description__content content hide-wrapper-content hidden">
+          <p>
+            С новыми клиентами работаем по предоплате 100%
+            <br>
+            Постоплата, отсрочка платежа действует для постоянных клиентов по индивидуальному согласованию.
+          </p>
+        </div>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+
+
+
+</section>

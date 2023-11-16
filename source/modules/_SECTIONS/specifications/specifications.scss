@@ -1,0 +1,82 @@
+.specifications {
+  padding-top: 30px;
+
+  &__h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    @include max-w($tablets) {
+      align-items: center;
+    }
+  }
+
+  &__add-btn {
+    @include no-btn;
+    color: #028dd8;
+    font-size: 14px;
+    line-height: 21px;
+    position: relative;
+    padding-left: 27px;
+    
+    @include max-w($tablets) {
+      margin-top: 4px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 15px;
+      height: 14px;
+      background-image: url(../img/icons/add-comparison.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  &__list {
+    column-count: 2;
+
+    @include max-w($tablets) {
+      column-count: 1;
+    }
+  }
+
+  &__item {
+    max-width: 340px;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px dashed #acacac;
+      z-index: -1;
+    }
+  }
+
+  &__name {
+    background-color: #fff;
+    color: #61656f;
+  }
+
+  &__value {
+    background-color: #fff;
+    color: #424b5e;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,67 @@
+<section class="top-month {{top-month-parent-mod}} {{top-month-mod}}">
+  <div class="container">
+    <div class="top-month__h2">
+      <h2>
+        Товар месяца
+      </h2>
+
+      {{> slider-btns slider-btns-parent-mod="top-month__slider-btns" slider-btns-mod=""}}
+    </div>
+  </div>
+
+  <div class="top-month__slider-wrapper">
+    <div class="top-month__swiper swiper">
+      <ul class="swiper-wrapper">
+        {{#each top-month}}
+        <li class="top-month__slide swiper-slide">
+          <div class="top-month__item">
+            <div class="container">
+              <div class="top-month__inner">
+                <div class="top-month__info">
+                  <div class="top-month__h3">
+                    <h3>
+                      Пруток алюминиевый АМГ6 8-300 мм
+                    </h3>
+                  </div>
+
+                  <div class="top-month__info-row">
+                    <div class="top-month__prices">
+                      <span class="top-month__price">
+                        от <b>9 660</b> до <b>10 500</b> руб./шт.
+                      </span>
+                      <span class="top-month__wholesale">
+                        Оптовая цена:  9 660 руб./шт. от 10 шт.
+                      </span>
+                    </div>
+
+                    <div class="top-month__btns">
+                      <button class="btn btn--white" type="button">
+                        Заказать
+                      </button>
+                      <button class="btn cart-btn" type="button">
+                        <span class="visually-hidden">
+                          добавить в корзину
+                        </span>
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="top-month__relative">
+                  <div class="top-month__img-wrapper">
+                    <img class="top-month__img" src="img/top-month/1.jpg" width="404"
+                      alt="Пруток алюминиевый АМГ6 8-300 мм">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+
+
+</section>

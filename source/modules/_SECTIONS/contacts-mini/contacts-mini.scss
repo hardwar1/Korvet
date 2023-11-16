@@ -1,0 +1,76 @@
+.contacts-mini {
+  border-radius: 6px;
+  border: 1px solid #dde1ed;
+  padding: 25px;
+  display: flex;
+  gap: 35px;
+  font-size: 14px;
+  line-height: 21px;
+
+  @include max-w($tablets) {
+    flex-direction: column;
+  }
+
+  &__side {
+    max-width: 350px;
+    width: 100%;
+
+    @include max-w($tablets) {
+      max-width: unset;
+    }
+  }
+
+  &__box {
+    display: flex;
+    gap: 23px;
+    align-items: flex-start;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__person-info {
+  }
+
+  &__name {
+    color: #424b5e;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    display: block;
+    color: #424b5e;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &__tel-link {
+    display: block;
+    width: fit-content;
+    color: #028dd8;
+  }
+
+  &__email-link {
+    display: block;
+    width: fit-content;
+    color: #5e7491;
+    margin-bottom: 25px;
+  }
+
+  &__address {
+    color: #028dd8;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: #424b5e;
+  }
+}

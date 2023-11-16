@@ -1,0 +1,26 @@
+.description {
+  padding-top: 40px;
+
+
+  &--pb40 {
+    padding-bottom: 40px;
+  }
+
+  &__h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  &__item &__content {
+    padding-left: 21px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+

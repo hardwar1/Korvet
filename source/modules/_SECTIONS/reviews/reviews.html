@@ -1,0 +1,65 @@
+<section class="reviews {{reviews-parent-mod}} {{reviews-mod}}">
+  <div class="container">
+    <div class="reviews__h2">
+      <h2>
+        Отзывы
+      </h2>
+
+      {{> slider-btns slider-btns-parent-mod="reviews__slider-btns " slider-btns-mod=""}}
+    </div>
+  </div>
+
+  <div class="reviews__swiper swiper">
+    <ul class="swiper-wrapper">
+      {{#each reviews}}
+      <li class="reviews__slide swiper-slide">
+        <div class="reviews__item">
+          <div class="reviews__avatar avatar">
+            <img class="avatar__img" src="{{img}}" alt="">
+          </div>
+
+          <div class="reviews__info">
+            <div class="reviews__row">
+              <div class="reviews__name">
+                Игорь,
+                <time class="reviews__date" datetime="2012-12-23T08:23:11+07:00">
+                  23 июня 2023 г.
+                </time>
+              </div>
+
+              <div class="reviews__stars stars">
+                <svg xmlns="http://www.w3.org/2000/svg" width="165" height="29" viewBox="0 0 165 29" fill="none">
+                  <path
+                    d="M14.5 0L17.7555 10.0193L28.2903 10.0193L19.7674 16.2115L23.0229 26.2307L14.5 20.0385L5.97711 26.2307L9.23257 16.2115L0.709681 10.0193L11.2445 10.0193L14.5 0Z"
+                    fill="#FCC400" />
+                  <path
+                    d="M48.5 0L51.7555 10.0193L62.2903 10.0193L53.7674 16.2115L57.0229 26.2307L48.5 20.0385L39.9771 26.2307L43.2326 16.2115L34.7097 10.0193L45.2445 10.0193L48.5 0Z"
+                    fill="#FCC400" />
+                  <path
+                    d="M82.5 0L85.7555 10.0193L96.2903 10.0193L87.7674 16.2115L91.0229 26.2307L82.5 20.0385L73.9771 26.2307L77.2326 16.2115L68.7097 10.0193L79.2445 10.0193L82.5 0Z"
+                    fill="#FCC400" />
+                  <path
+                    d="M116.5 0L119.755 10.0193L130.29 10.0193L121.767 16.2115L125.023 26.2307L116.5 20.0385L107.977 26.2307L111.233 16.2115L102.71 10.0193L113.245 10.0193L116.5 0Z"
+                    fill="#FCC400" />
+                  <path
+                    d="M150.5 0L153.755 10.0193L164.29 10.0193L155.767 16.2115L159.023 26.2307L150.5 20.0385L141.977 26.2307L145.233 16.2115L136.71 10.0193L147.245 10.0193L150.5 0Z"
+                    fill="#FCC400" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="reviews__text">
+              <p>
+                Наша компания третий раз заказывает у производителя разные трубы. Фирма с поставкой крупных партий
+                металлопроката справляется успешно. Трубы поставляются высокого качества, без брака.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+
+</section>

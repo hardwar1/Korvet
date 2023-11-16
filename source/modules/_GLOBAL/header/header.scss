@@ -1,0 +1,308 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--bg {
+    background-image: url(../img/header-bg.png);
+  }
+
+  &__top {
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+    position: relative;
+
+    @include max-w($phones-sm) {
+      padding-bottom: 80px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    @include max-w($desktops-md) {
+      justify-content: space-between;
+    }
+
+    @include max-w($desktops-sm) {
+      gap: 20px;
+    }
+
+    @include max-w($phones-lg) {
+      gap: 15px;
+    }
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    @include max-w($phones-lg) {
+      width: 70px;
+      height: 68px;
+    }
+  }
+
+  &__top-btns {
+    display: flex;
+    margin-left: auto;
+    gap: 35px;
+    max-width: 625px;
+    width: 100%;
+
+    @include max-w($desktops-md) {
+      width: unset;
+      gap: 80px;
+      margin-right: auto;
+    }
+
+    @include max-w($desktops-sm) {
+      gap: 25px;
+      margin-right: unset;
+    }
+
+    @include max-w($tablets) {
+      gap: 17px;
+    }
+
+    @include max-w($phones-lg) {
+      flex-direction: column;
+      gap: 3px;
+      margin-left: unset;
+      margin-right: auto;
+    }
+  }
+
+  &__form {
+    position: relative;
+
+    height: fit-content;
+    width: 100%;
+    max-width: 460px;
+    flex-shrink: 1;
+
+    @include max-w($desktops-md) {
+      width: 250px;
+      margin-left: unset;
+    }
+
+    @include max-w($desktops-sm) {
+      width: unset;
+    }
+  }
+
+  &__input {
+    @include max-w($desktops-sm) {
+      position: absolute;
+      overflow: hidden;
+      height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      border: 0;
+      top: 100%;
+      left: 0;
+      z-index: 36;
+      width: 175px;
+      
+      transition:
+        padding 0.3s,
+        height 0.3s;
+
+      &.active {
+        padding: 12px;
+        height: 48px;
+      }
+    }
+  }
+
+  &__form-btn {
+    @include no-btn;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    height: 48px;
+
+    @include max-w($desktops-sm) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 59px;
+      height: 48px;
+      position: static;
+      background-color: #fff;
+      transform: unset;
+      border-radius: 5px;
+    }
+
+    @include max-w($tablets) {
+      width: 48px;
+    }
+
+    @include max-w($phones-lg) {
+      width: 36px;
+      height: 34px;
+    }
+
+    svg {
+      display: block;
+    }
+  }
+
+  &__cart-btn {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    color: #fff;
+    background-color: transparent;
+    padding: 14px 13px;
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    outline-offset: -4px;
+    outline: 1px solid transparent;
+    transition:
+      color 0.3s,
+      border-color 0.3s,
+      outline-color 0.3s;
+
+    svg {
+      fill: #fff;
+      transition: fill 0.3s;
+    }
+
+    &:focus {
+      outline-color: #028dd8;
+      border-color: #028dd8;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: #028dd8;
+        border-color: #028dd8;
+
+        svg {
+          fill: #028dd8;
+        }
+      }
+    }
+
+    @include max-w($tablets) {
+      padding: 14px;
+    }
+
+    @include max-w($phones-lg) {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 34px;
+    }
+  }
+
+  &__cart-text {
+    @include max-w($tablets) {
+      font-size: 0;
+      line-height: 0;
+      position: absolute;
+      opacity: 0;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+    font-family: $ff-jost;
+    flex-shrink: 0;
+
+    @include max-w($phones-sm) {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__tel {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 23px;
+    white-space: nowrap;
+
+    @include max-w($phones-lg) {
+      font-size: 18px;
+    }
+  }
+
+  &__email {
+    padding-left: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+
+  &__bottom {
+    background-color: rgba(255, 255, 255, 0.06);
+
+    @include max-w($desktops-sm) {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      overflow-y: auto;
+      padding-top: 100px;
+      background-color: rgba(0, 0, 0, 0.95);
+      transform: translateX(150%);
+      transition: transform 0.9s;
+    }
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+
+  &__nav {
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include max-w($desktops-sm) {
+      width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: block;
+    padding: 16px 0;
+    font-family: $ff-jost;
+    color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}

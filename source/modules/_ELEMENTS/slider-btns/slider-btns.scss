@@ -1,0 +1,52 @@
+.slider-btns {
+  display: flex;
+  width: 162px;
+  height: 67px;
+  border-radius: 100px;
+  border: 4px solid rgba(222, 222, 222, 0.42);
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+
+  @include max-w($tablets) {
+    height: 51px;
+    width: 124px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 1px;
+    background-color: #e3e3e3;
+  }
+
+  &__btn {
+    height: 100%;
+    width: 50%;
+    background-color: transparent;
+    border-color: transparent;
+    background-size: 20px 33px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/slider-arrows/right.png);
+    background-color: #fff;
+    transition: background-color 0.3s;
+
+    @include max-w($tablets) {
+      background-size: 13px 21px;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: #72caf9;
+    }
+  }
+
+  &__btn--prev {
+    background-image: url(../img/slider-arrows/left.png);
+  }
+}

@@ -1,0 +1,69 @@
+<section class="get-offer {{get-offer-parent-mod}} {{get-offer-mod}}"
+  style="background-image: url(img/get-offer/bg.jpg);">
+  <div class="container">
+    <div class="get-offer__h2">
+      <h2>
+        Получите выгодное предложение
+      </h2>
+    </div>
+
+    <form class="get-offer__form">
+      <fieldset class="get-offer__fieldset">
+        <legend class="get-offer__legend">
+          Оставьте заявку, и наши менеджеры свяжутся с Вами
+        </legend>
+
+        <div class="get-offer__row">
+          <label class="get-offer__relative get-offer__relative--profile">
+            <input class="get-offer__input input" type="text" name="name" aria-label="Ваше Имя" placeholder="Ваше Имя"
+              required>
+          </label>
+
+          <label class="get-offer__relative get-offer__relative--call">
+            <input class="get-offer__input input" type="tel" name="tel" aria-label="Ваш телефон"
+              placeholder="+7 (___) ___-__-__" inputmode="tel" required>
+          </label>
+
+          <label class="get-offer__relative get-offer__relative--sms">
+            <input class="get-offer__input input " type="email" name="email" aria-label="Почта" placeholder="Почта"
+              inputmode="email" required>
+          </label>
+        </div>
+
+        <textarea class="get-offer__textarea input input--textarea" name="message" aria-label="Сообщение"></textarea>
+
+        <div class="get-offer__btns">
+          <label class="get-offer__file file">
+            <input class="file__input visually-hidden" type="file" name="file" aria-label="добавить файлы" multiple>
+
+            <div class="file__btn btn btn--white">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                <g clip-path="url(#clip0_117_40)">
+                  <path d="M6.37492 7.7915V12.0415M6.37492 12.0415L7.79159 10.6248M6.37492 12.0415L4.95825 10.6248"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M15.5834 7.08317V10.6248C15.5834 14.1665 14.1667 15.5832 10.6251 15.5832H6.37508C2.83341 15.5832 1.41675 14.1665 1.41675 10.6248V6.37484C1.41675 2.83317 2.83341 1.4165 6.37508 1.4165H9.91675"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M15.5834 7.08317H12.7501C10.6251 7.08317 9.91675 6.37484 9.91675 4.24984V1.4165L15.5834 7.08317Z"
+                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_117_40">
+                    <rect width="17" height="17" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              Прикрепить файл
+            </div>
+          </label>
+
+          <button class="get-offer__submit btn btn--fill-blue" type="submit">
+            Отправить
+          </button>
+        </div>
+
+      </fieldset>
+    </form>
+  </div>
+</section>

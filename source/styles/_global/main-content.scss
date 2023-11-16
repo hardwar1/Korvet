@@ -1,0 +1,18 @@
+.main-content {
+  & > *:last-child {
+  }
+
+  &__block {
+    padding-top: 70px;
+    padding-bottom: 80px;
+    
+    @include max-w($tablets) {
+      padding-top: 40px;
+      padding-bottom: 55px;
+    }
+  }
+
+  &__block--clear {
+    padding: 0;
+  }
+}

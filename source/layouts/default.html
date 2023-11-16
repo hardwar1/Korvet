@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    {{> head title=title }}
+
+</head>
+
+<body>
+    <div class="page">
+        {{> header header-parent-mod="page__header" header-mod=header-mod}}
+
+        <main class="page__main  main">
+            <div class="main__content-wrap">
+
+                <div class="main__content">
+                    {{> body }}
+                </div>
+            </div>
+        </main>
+
+        {{> footer footer-parent-mod="page__footer" footer-mod=""}}
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/plugins.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

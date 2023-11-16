@@ -1,0 +1,192 @@
+.hero {
+  color: #fff;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  min-height: 100vh;
+
+  &__slider-wrapper {
+  }
+
+  &__swiper {
+  }
+
+  &__slide {
+    overflow: hidden;
+  }
+
+  &__info {
+    padding: 130px 0 195px;
+    max-width: 630px;
+
+    @include max-w($desktops-md) {
+      padding: 20px 0 165px;
+      max-width: 550px;
+    }
+
+    @include max-w($tablets) {
+      padding-top: 50px;
+    }
+  }
+
+  &__h3 {
+    margin-bottom: 30px;
+
+    @include max-w($phones-md) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: $ff-jost;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  &__item {
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 8px;
+      height: 12px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url(../img/hero/arrow-right.png);
+    }
+  }
+
+  &__btn {
+    padding: 19px 35px;
+    width: fit-content;
+    font-size: 20px;
+    line-height: normal;
+
+    @include max-w($phones-md) {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: calc(100% - 70px);
+    max-width: 45%;
+    object-fit: contain;
+    object-position: right center;
+    z-index: -1;
+
+    @include max-w($desktops-md) {
+      right: unset;
+      max-width: 500px;
+      left: 60%;
+    }
+
+    @include max-w($tablets) {
+      left: unset;
+      right: -220px;
+      width: 360px;
+      object-position: bottom right;
+      top: unset;
+      bottom: 80px;
+      transform: unset;
+    }
+
+    @include max-w($phones-sm) {
+      right: -260px;
+    }
+  }
+
+  &__control-wrapper {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 35px;
+    z-index: 5;
+  }
+
+  &__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .swiper-pagination {
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    bottom: unset;
+    left: unset;
+  }
+
+  .swiper-pagination-bullet {
+    opacity: 1;
+    transition:
+      background-color 0.3s,
+      outline-color 0.3s,
+      border-color 0.3s,
+      width 0.3s,
+      height 0.3s;
+    background-color: #464d67;
+    width: 18px;
+    height: 18px;
+    margin: 0 !important;
+    outline: 4px solid transparent;
+    border: 3px solid transparent;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #fff;
+    outline-color: #0343ad;
+    border-color: #0343ad;
+  }
+
+  &__next-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 34px;
+    background-image: url(../img/hero/next-link.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+
+    &:focus,
+    &:hover {
+      background-color: #028dd8;
+    }
+
+    @include max-w($desktops-sm) {
+      display: none;
+    }
+  }
+}
+
+.slider-dots {
+}

@@ -1,0 +1,126 @@
+.get-offer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-family: $ff-jost;
+
+  &__h2 > * {
+    margin-bottom: 20px;
+    text-align: left;
+    color: inherit;
+  }
+
+  &__form {
+  }
+
+  &__fieldset {
+    padding: 0 120px 0 0;
+    border: 0;
+    max-width: 1020px;
+
+    @include max-w($tablets) {
+      padding-right: 0;
+    }
+
+    @include max-w($phones-lg) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+
+  &__legend {
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    @include max-w($tablets) {
+      font-size: 16px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+
+    @include max-w($phones-lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__relative {
+    width: calc(100% / 3 - 10px);
+    position: relative;
+
+    @include max-w($phones-lg) {
+      width: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      width: 15px;
+      height: 15px;
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+
+      @include max-w($tablets) {
+        left: 10px;
+      }
+    }
+
+    &--profile::after {
+      background-image: url(../img/get-offer/profile.svg);
+    }
+
+    &--call::after {
+      background-image: url(../img/get-offer/call.svg);
+    }
+
+    &--sms::after {
+      background-image: url(../img/get-offer/sms.svg);
+    }
+  }
+
+  &__input {
+  }
+
+  &__textarea {
+    margin-bottom: 18px;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+
+    @include max-w($phones-lg) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__file {
+    @include max-w($phones-lg) {
+      width: 100%;
+    }
+  }
+
+  &__submit {
+    width: unset;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 18px;
+
+    @include max-w($phones-lg) {
+      width: 100%;
+    }
+  }
+}

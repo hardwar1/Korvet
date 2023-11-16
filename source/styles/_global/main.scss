@@ -1,0 +1,11 @@
+.main {
+    &__content-wrap {
+        display: flex;
+    }
+
+    &__content {
+        flex-shrink: 0;
+        flex-grow: 1;
+        width: 100%;
+    }
+}

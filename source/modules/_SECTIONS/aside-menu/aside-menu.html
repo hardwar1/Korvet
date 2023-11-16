@@ -1,0 +1,46 @@
+<nav class="aside-menu">
+  <div class="aside-menu__title">
+    Каталог металлопроката
+  </div>
+
+  <ul class="aside-menu__item accardion-menu">
+    {{#each accardion-menu}}
+    <li class="accardion-menu__item">
+      <button class="accardion-menu__btn hovers" type="button">
+        {{text}}
+      </button>
+
+      <div class="accardion-menu__body">
+        <ul class="accardion-menu__list">
+          <li class="accardion-menu__sub-item">
+            <a class="accardion-menu__sub-link hovers current" href="">
+              Лист
+            </a>
+          </li>
+          <li class="accardion-menu__sub-item">
+            <a class="accardion-menu__sub-link hovers" href="">
+              Пруток
+            </a>
+          </li>
+          <li class="accardion-menu__sub-item">
+            <a class="accardion-menu__sub-link hovers" href="">
+              Плита
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+
+  <ul class="aside-menu__item simple-menu">
+    {{#each simple-menu}}
+    <li class="simple-menu__item">
+      <a class="simple-menu__link hovers" href="">
+        {{text}}
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+
+</nav>

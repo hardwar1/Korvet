@@ -1,0 +1,154 @@
+.reviews {
+  font-family: $ff-jost;
+
+  @include max-w($desktops-sm) {
+    padding-bottom: 0;
+  }
+
+  &__h2 > * {
+    margin-bottom: 0;
+  }
+
+  &__h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+
+  &__swiper {
+  }
+
+  &__slide {
+    width: fit-content;
+  }
+
+  &__item {
+    max-width: calc(100vw - 20px);
+    width: 1210px;
+    position: relative;
+
+    @include max-w($tablets) {
+      max-width: 100vw;
+    }
+  }
+
+  &__avatar {
+    position: absolute;
+    left: 21px;
+    top: 0;
+    z-index: 1;
+
+    @include max-w($desktops-sm) {
+      left: 0;
+    }
+
+    @include max-w($tablets) {
+      left: 10px;
+    }
+  }
+
+  &__info {
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-left: 218px;
+
+    @include max-w($desktops-sm) {
+      padding-left: 140px;
+    }
+
+    @include max-w($phones-md) {
+      padding-top: 15px;
+      padding-right: 10px;
+    }
+
+    @include max-w($phones-md) {
+      padding-left: 93px;
+    }
+  }
+
+  &__name {
+    color: #101620;
+    font-size: 35px;
+    line-height: 58px;
+
+    @include max-w($desktops-sm) {
+      font-size: 28px;
+    }
+
+    @include max-w($tablets) {
+      font-size: 22px;
+    }
+
+    @include max-w($phones-md) {
+      line-height: 1;
+    }
+  }
+
+  &__date {
+    color: #8e8e8f;
+    font-size: 25px;
+    line-height: 58px;
+
+    @include max-w($desktops-sm) {
+      font-size: 20px;
+    }
+
+    @include max-w($phones-lg) {
+      font-size: 16px;
+    }
+
+    @include max-w($phones-md) {
+      line-height: 1;
+      display: block;
+    }
+  }
+
+  &__stars svg {
+    width: 165px;
+
+    @include max-w($desktops-sm) {
+      width: 116px;
+    }
+
+    @include max-w($phones-lg) {
+      width: 75px;
+    }
+  }
+
+  &__text {
+    padding: 54px 45px 57px 218px;
+    border-radius: 8px;
+    background-color: #f7faff;
+    color: #4f4f4f;
+    font-size: 20px;
+    line-height: normal;
+
+    @include max-w($desktops-sm) {
+      padding: 35px 45px 35px 140px;
+    }
+
+    @include max-w($tablets) {
+      font-size: 18px;
+      padding: 35px 10px;
+    }
+
+    @include max-w($phones-md) {
+      font-size: 15px;
+    }
+  }
+
+  .swiper-slide {
+    transition: opacity 0.3s;
+    opacity: 0.3;
+  }
+
+  .swiper-slide-active {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,36 @@
+.slider-section {
+  padding-top: 40px;
+
+  &__h2 {
+  }
+
+  &__bg-wrapper {
+    padding-top: 25px;
+  }
+
+  &__swiper {
+  }
+
+  &__slide {
+    width: 206px;
+  }
+
+  &__card {
+  }
+
+  .swiper-wrapper {
+    align-items: stretch;
+  }
+
+  &--bg &__bg-wrapper {
+    padding: 30px;
+    border-radius: 8px;
+    background-image: radial-gradient(35.76% 55.37% at 92.5% 92.91%, rgba(0, 96, 255, 0.2) 0%, rgba(0, 96, 255, 0) 100%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #d1e3ff 100%);
+  }
+}
+
+.swiper-slide {
+}
+
+

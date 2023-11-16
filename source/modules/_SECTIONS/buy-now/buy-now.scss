@@ -1,0 +1,91 @@
+.buy-now {
+  padding: 30px 40px;
+  border-radius: 8px;
+  background-image: radial-gradient(61.9% 64.98% at 92.06% 19.7%, rgba(0, 96, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%),
+    linear-gradient(180deg, #e8f3ff 0%, rgba(255, 255, 255, 0) 100%);
+
+  @include max-w($desktops-sm) {
+    padding: 30px 10px;
+  }
+
+  &__h2 {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #a9a9a9;
+  }
+
+  &__form {
+  }
+
+  &__row {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px 30px;
+    margin-bottom: 20px;
+
+    @include max-w($tablets) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    width: calc((100% - 60px) / 3);
+
+    @include max-w($tablets) {
+      width: 100%;
+    }
+
+    &--textarea {
+      width: 100%;
+      flex-shrink: 1;
+    }
+  }
+
+  &__label-text {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    margin-bottom: 4px;
+  }
+
+  &__input {
+    border-radius: 8px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: $ff-open-sans;
+    font-size: 13px;
+
+    &::placeholder {
+      color: #b4b4b4;
+    }
+
+    &--textarea {
+      height: 50px;
+      resize: vertical;
+    }
+  }
+
+  &__submit {
+    min-width: fit-content;
+    width: calc((100% - 60px) / 3);
+    @include max-w($tablets) {
+      width: 100%;
+      margin-left: auto;
+      max-width: 260px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+---
+layout: default
+title: Товары и услуги
+header-mod: header--bg
+---
+<div class="main-content">
+  <h1 class="visually-hidden">
+    Корвет
+  </h1>
+
+  <div class="main-content__container container">
+    <div class="column-content page-padding-top ">
+      <div class="column-content__aside js-active">
+        <div class="column-content__relative">
+          <button class="column-content__burger burger-btn js-active" type="button" aria-label="открыть/закрыть меню">
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+          </button>
+
+          <div class="column-content__aside-content">
+
+            {{> aside-menu aside-menu-parent-mod="" aside-menu-mod=""}}
+
+          </div>
+        </div>
+      </div>
+
+      <div class="column-content__content">
+
+        {{> breadcrumbs breadcrumbs-parent-mod=" " breadcrumbs-mod=""}}
+
+        <h1 class="title">Товары и услуги</h1>
+
+        {{> product-groups product-groups-parent-mod="" product-groups-mod=""}}
+
+        {{> offers2 offers-parent-mod="main-content__block" offers-mod="offers--no-bg"}}
+
+        {{> pagination pagination-parent-mod="" pagination-mod=""}}
+
+      </div>
+    </div>
+  </div>
+
+  {{> contacts contacts-parent-mod="" contacts-mod=""}}
+
+</div>

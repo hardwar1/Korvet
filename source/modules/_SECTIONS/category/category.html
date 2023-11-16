@@ -1,0 +1,39 @@
+<section class="category {{category-parent-mod}} {{category-mod}}">
+  <span class="category__bg"></span>
+  <div class="container">
+    <div class="category__h2" id="category">
+      <h2>
+        Категории товаров
+      </h2>
+
+      {{> slider-btns slider-btns-parent-mod="category__slider-btns" slider-btns-mod=""}}
+    </div>
+
+    <div class="category__swiper swiper-768">
+      <ul class="category__list ">
+        {{#each category}}
+        <li class="category__item">
+          <article class="category__card category-card">
+            <a class="category-card__link" href="">
+              <span class="visually-hidden">
+                {{title}}
+              </span>
+            </a>
+
+            <img class="category-card__img" src="img/category/{{img}}.png" height="140" alt="{{title}}">
+
+            <h3 class="category-card__h3">
+              {{title}}
+            </h3>
+          </article>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    <a class="category__btn long-btn" href="">
+      Смотреть все
+    </a>
+
+
+  </div>
+</section>

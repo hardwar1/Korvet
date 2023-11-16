@@ -1,0 +1,21 @@
+<div class="breadcrumbs {{breadcrumbs-parent-mod}} {{breadcrumbs-mod}}">
+  <div class="breadcrumbs__inner">
+    <button class="breadcrumbs__btn breadcrumbs__btn--to-start show" type="button">
+      <span class="visually-hidden">в начало</span>
+    </button>
+
+    <ul class="breadcrumbs__list">
+      {{#each breadcrumbs}}
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="">
+          {{text}}
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+
+    <button class="breadcrumbs__btn breadcrumbs__btn--to-end show" type="button">
+      <span class="visually-hidden">в конец</span>
+    </button>
+  </div>
+</div>

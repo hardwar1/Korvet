@@ -1,0 +1,159 @@
+.about {
+  background-color: #f7faff;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__swiper {
+  }
+
+  &__list {
+  }
+
+  &__slide {
+  }
+
+  &__item {
+    display: flex;
+    overflow: hidden;
+    @include max-w($desktops-sm) {
+      // display: block;
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    width: 54%;
+    font-family: $ff-jost;
+    background-image: url(../img/about/1.png);
+    background-repeat: no-repeat;
+    background-position: top right 590px;
+    background-size: auto 100%;
+    position: relative;
+
+    @include max-w($desktops-sm) {
+      width: unset;
+      background-image: unset;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -93px;
+        width: 295px;
+        height: 377px;
+        background-image: url(../img/about/2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+      }
+    }
+
+    @include max-w($phones-lg) {
+      &::after {
+        right: -65px;
+        bottom: -23px;
+      }
+    }
+  }
+
+  &__info-inner {
+    margin-left: auto;
+    padding: 40px 110px 40px 10px;
+    max-width: 690px;
+
+    @include max-w($desktops-md) {
+      padding-right: 50px;
+    }
+
+    @include max-w($desktops-sm) {
+      max-width: unset;
+    }
+  }
+
+  &__h3 > * {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 32px;
+
+    @include max-w($tablets) {
+      font-size: 19px;
+      margin-bottom: 15px;
+    }
+
+    @include max-w($phones-lg) {
+      font-size: 15px;
+    }
+  }
+
+  &__italic-text {
+    margin-bottom: 23px;
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.4;
+    color: #0060ff;
+
+    @include max-w($tablets) {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btn {
+    padding-right: 43px;
+    padding-left: 43px;
+    width: unset;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    width: 46%;
+
+    @include max-w($desktops-sm) {
+      width: 100%;
+      padding-bottom: 50%;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px 0 0 8px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include max-w($desktops-sm) {
+      border-radius: 0;
+    }
+  }
+
+  &__slider-btns {
+    position: absolute;
+    bottom: 44px;
+    left: 50%;
+    transform: translateX(91px);
+
+    @include max-w($desktops-sm) {
+      left: 30px;
+      bottom: 65px;
+      transform: unset;
+    }
+
+    @include max-w($tablets) {
+      left: 25px;
+      bottom: 30px;
+    }
+
+    @include max-w($phones-lg) {
+      bottom: 20px;
+    }
+  }
+}

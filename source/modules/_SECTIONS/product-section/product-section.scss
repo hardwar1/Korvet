@@ -1,0 +1,177 @@
+.product-section {
+  &__h1 {
+    margin-bottom: 15px;
+  }
+
+  &__label {
+    margin-bottom: 25px;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 23px;
+    margin-bottom: 30px;
+    @include max-w($tablets) {
+      flex-direction: column;
+    }
+  }
+
+  &__img-side {
+    padding: 50px 0;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid #dde1ed;
+    max-width: 404px;
+    width: 100%;
+
+    @include max-w($tablets) {
+      margin: 0 auto;
+      padding: 20px 25px;
+    }
+  }
+
+  &__favourites {
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
+
+  &__img-list {
+  }
+
+  &__img-item:not(:first-child) {
+    display: none;
+  }
+
+  &__img-link {
+  }
+
+  &__img {
+  }
+
+  &__info {
+    width: 100%;
+    min-width: 420px;
+    @include max-w($tablets) {
+      min-width: unset;
+    }
+  }
+
+  &__top {
+    padding: 24px 36px;
+    border-radius: 6px;
+    background-color: #f7f8f9;
+    margin-bottom: 15px;
+
+    @include max-w($phones-sm) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__price {
+    display: block;
+    color: #2f3644;
+    font-size: 26px;
+    line-height: 1.7;
+    b {
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    @include max-w($phones-sm) {
+      font-size: 20px;
+
+      b {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__wholesale {
+    display: block;
+    color: #61656f;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+
+    b {
+      font-size: 18px;
+    }
+  }
+
+  &__order {
+    margin-bottom: 30px;
+    display: block;
+    color: #61656f;
+    font-size: 14px;
+    line-height: 1.3;
+    text-transform: lowercase;
+  }
+
+  &__order-text {
+    color: #9ba5ac;
+  }
+
+  &__btn {
+  }
+
+  &__person-info {
+    border-radius: 6px;
+    border: 1px solid #dde1ed;
+    padding: 25px 37px 37px 37px;
+    font-size: 14px;
+    line-height: 21px;
+
+    @include max-w($phones-sm) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__name {
+    display: block;
+    color: #424b5e;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__position {
+    display: block;
+    color: #424b5e;
+    margin-bottom: 15px;
+  }
+
+  &__tel-link {
+    color: #028dd8;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__tel-text {
+    border-bottom: 1px dotted #028dd8;
+  }
+
+  &__mail-link {
+    display: inline-block;
+    color: #61656f;
+    padding-left: 25px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 6px;
+      width: 17px;
+      height: 10px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      background-image: url(../img/icons/mail.svg);
+    }
+  }
+}

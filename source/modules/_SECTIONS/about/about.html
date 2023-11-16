@@ -1,0 +1,56 @@
+<section class="about {{about-parent-mod}} {{about-mod}}">
+  <h2 class="visually-hidden">
+    О компании
+  </h2>
+
+  <div class="about__inner">
+
+    <div class="about__swiper swiper">
+      <ul class="about__list swiper-wrapper">
+        {{#each about}}
+        <li class="about__slide swiper-slide">
+          <div class="about__item">
+
+            <div class="about__info" >
+              <div class="about__info-inner">
+                <div class="about__h3">
+                  <h3 class="h2">
+                    О компании
+                  </h3>
+                </div>
+
+                <div class="about__text">
+                  <p>
+                    ООО “КОРВЕТ-ТУЛА” занимается поставкой цветного
+                    металлопроката, осуществляет продажу продукции оптом
+                    и в розницу. Качество продукции подтверждается всеми
+                    необходимыми сертификатами. На складе всегда
+                    в ассортименте наиболее востребованные позиции.
+                    При отсутствии требуемых товарных единиц обеспечим
+                    доставку в кратчайшие сроки (не более 5 дней).
+                  </p>
+                </div>
+
+                <div class="about__italic-text">
+                  Доставка по Тульской области.
+                </div>
+
+                <button class="about__btn btn" type="button">
+                  Читать далее
+                </button>
+              </div>
+            </div>
+
+            <div class="about__img-wrapper">
+              <img class="about__img" src="img/about/2.jpg" width="900" height="" alt="офисное помещение">
+            </div>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+
+    {{> slider-btns slider-btns-parent-mod="about__slider-btns " slider-btns-mod=""}}
+  </div>
+
+</section>

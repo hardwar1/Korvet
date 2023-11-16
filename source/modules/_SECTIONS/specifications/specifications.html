@@ -1,0 +1,25 @@
+<section class="specifications {{specifications-parent-mod}} {{specifications-mod}}">
+  <div class="specifications__h2">
+    <h2 class="title title--400">
+      Характеристики
+    </h2>
+
+    <button class="specifications__add-btn" type="button">
+      Добавить товар к сравнению
+    </button>
+  </div>
+
+  <ul class="specifications__list">
+    {{#each specifications}}
+    <li class="specifications__item">
+      <span class="specifications__name">
+        {{name}}
+      </span>
+      <span class="specifications__value">
+        {{value}}
+      </span>
+    </li>
+    {{/each}}
+  </ul>
+
+</section>

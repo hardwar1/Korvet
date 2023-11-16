@@ -1,0 +1,52 @@
+@import "_service/variables";
+@import "_service/mixins";
+@import "_service/fonts";
+@import "_service/reset";
+
+/* plugins */
+
+@import "_GLOBAL/page";
+@import "_service/basic";
+@import "_GLOBAL/content";
+@import "_GLOBAL/main-content";
+@import "_GLOBAL/column-content";
+
+/* modules */
+@import "../modules/_ELEMENTS/slider-btns/slider-btns";
+
+
+@import "../modules/_GLOBAL/header/header";
+@import "../modules/_GLOBAL/footer/footer";
+
+
+@import "../modules/_SECTIONS/hero/hero";
+@import "../modules/_SECTIONS/category/category";
+@import "../modules/_SECTIONS/offers/offers";
+@import "../modules/_SECTIONS/top-month/top-month";
+
+@import "../modules/_SECTIONS/advantages/advantages";
+@import "../modules/_SECTIONS/about/about";
+@import "../modules/_SECTIONS/reviews/reviews";
+@import "../modules/_SECTIONS/certificates/certificates";
+@import "../modules/_SECTIONS/get-offer/get-offer";
+@import "../modules/_SECTIONS/contacts/contacts";
+
+@import "../modules/_SECTIONS/aside-menu/aside-menu";
+@import "../modules/_SECTIONS/breadcrumbs/breadcrumbs";
+@import "../modules/_SECTIONS/pagination/pagination";
+@import "../modules/_SECTIONS/product-groups/product-groups";
+
+@import "../modules/_SECTIONS/product-section/product-section";
+@import "../modules/_SECTIONS/specifications/specifications";
+@import "../modules/_SECTIONS/description/description";
+@import "../modules/_SECTIONS/buy-now/buy-now";
+@import "../modules/_SECTIONS/slider-section/slider-section";
+
+@import "../modules/_SECTIONS/contacts-mini/contacts-mini";
+
+
+
+
+
+
+

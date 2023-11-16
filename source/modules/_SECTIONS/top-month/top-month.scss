@@ -1,0 +1,204 @@
+.top-month {
+  padding-bottom: 0;
+  position: relative;
+
+  @include max-w($tablets) {
+    padding-top: 95px;
+  }
+
+  &__h2 > * {
+    margin-bottom: 0;
+  }
+
+  &__h2 {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+    margin-bottom: -75px;
+
+    @include max-w($tablets) {
+      margin-bottom: -115px;
+    }
+  }
+
+  &__slider-btns {
+    display: flex;
+    position: relative;
+    z-index: 3;
+
+    @include max-w($tablets) {
+      position: absolute;
+      bottom: 40px;
+      right: 10px;
+    }
+
+    @include max-w($phones-min) {
+      width: 86px;
+    }
+  }
+
+  &__slider-wrapper {
+  }
+
+  &__swiper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: -30px;
+  }
+
+  &__slide {
+    padding-top: 90px;
+    padding-bottom: 20px;
+    @include max-w($desktops-sm) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__item {
+    color: #fff;
+    background-color: #0151d5;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+  }
+
+  &__info {
+    position: relative;
+    padding: 24px 0 34px;
+    width: 100%;
+    max-width: 575px;
+    font-family: $ff-jost;
+    color: #fff;
+    flex-shrink: 0;
+
+    @include max-w($desktops-sm) {
+      max-width: 473px;
+    }
+
+    @include max-w($tablets) {
+      max-width: 250px;
+      padding-bottom: 123px;
+    }
+
+    @include max-w($tablets) {
+      max-width: unset;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &__h3 > * {
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28px;
+    color: inherit;
+    text-align: left;
+
+    @include max-w($desktops-sm) {
+      font-size: 21px;
+    }
+
+    @include max-w($tablets) {
+      max-width: 210px;
+    }
+  }
+
+  &__info-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 543px;
+  }
+
+  &__prices {
+  }
+
+  &__price {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 5px;
+
+    b {
+      font-size: 20px;
+    }
+  }
+
+  &__wholesale {
+    color: #d3d3d3;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__btns {
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    gap: 7px;
+
+    @include max-w($tablets) {
+      position: absolute;
+      bottom: 13px;
+      left: 10px;
+    }
+  }
+
+  &__relative {
+    position: relative;
+    width: 100%;
+    max-width: 404px;
+    width: 100%;
+    @include max-w($tablets) {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: calc(100% - 220px);
+    }
+  }
+
+  &__img-wrapper {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-60%);
+    left: 0;
+    width: 100%;
+    padding-bottom: 70%;
+
+    @include max-w($tablets) {
+      transform: unset;
+      top: unset;
+      bottom: calc(100% - 100px);
+    }
+  }
+
+  &__img {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.25);
+
+    object-position: left center;
+    @include max-w($tablets) {
+      max-height: 200px;
+      min-height: 140px;
+    }
+  }
+}

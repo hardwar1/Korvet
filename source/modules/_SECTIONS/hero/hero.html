@@ -1,0 +1,61 @@
+<section class="hero page-padding-top" style="background-image: url(img/hero/bg.png);">
+
+  <h2 class="visually-hidden">
+    Горячие предложения
+  </h2>
+
+  <div class="hero__slider-wrapper">
+    <div class="hero__swiper swiper">
+      <ul class="swiper-wrapper">
+        {{#each hero}}
+        <li class="hero__slide swiper-slide">
+          <div class="container">
+            <div class="hero__info">
+              <div class="hero__h3">
+                <h3 class="h1">
+                  Латунный прокат
+                </h3>
+              </div>
+
+              <ul class="hero__list">
+                <li class="hero__item">
+                  Ленты, листы, проволока, прутки, трубы, шестигранники
+                </li>
+                <li class="hero__item">
+                  Вся продукция полностью соответствует требованиям ГОСТ и ТУ
+                </li>
+                <li class="hero__item">
+                  Постоянным клиентам предоставляются скидки и отсрочка платежа
+                </li>
+              </ul>
+
+              <a class="hero__btn btn btn--fill-blue" href="">
+                Подробнее →
+              </a>
+            </div>
+
+          </div>
+
+          <img class="hero__img" src="img/hero/slide.png" alt="Латунный прокат">
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="hero__control-wrapper">
+      <div class="container">
+        <div class="hero__control">
+          <div class="swiper-pagination"></div>
+
+          <a class="hero__next-link" href="#category" aria-label="перейти дальше"></a>
+
+          {{> slider-btns slider-btns-parent-mod="hero__slider-btns" slider-btns-mod=""}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</section>

@@ -1,0 +1,47 @@
+<section class="certificates {{certificates-parent-mod}} {{certificates-mod}}">
+  <div class="container">
+    <div class="certificates__h2">
+      <h2>
+        Сертификаты соответствия
+      </h2>
+    </div>
+
+    <div class="certificates__inner">
+      <div class="certificates__info">
+        <div class="certificates__text">
+          <p>
+            Вся наша продукция подтверждена сертификатами качества
+          </p>
+        </div>
+
+        {{> slider-btns slider-btns-parent-mod="certificates__slider-btns" slider-btns-mod=""}}
+      </div>
+
+      <div class="certificates__slider-wrapper">
+        <div class="certificates__swiper swiper">
+          <ul class="swiper-wrapper">
+
+            {{#each certificates}}
+            <li class="certificates__slide swiper-slide">
+              <div class="certificates__item">
+                <a class="certificates__link" href="">
+                  <img class="certificates__img" src="img/certificate.png" width="232" height="" alt="{{title}}">
+                </a>
+
+                <div class="certificates__h3">
+                  <h3>
+                    {{title}}
+                  </h3>
+                </div>
+              </div>
+            </li>
+            {{/each}}
+
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>

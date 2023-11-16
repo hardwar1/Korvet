@@ -1,0 +1,18 @@
+---
+layout: 1
+title: Список страниц
+list-1:
+    -   href: index
+        text: Главная
+    -   href: goods-and-services
+        text: Товары и услуги
+    -   href: product
+        text: Лист дюралевый Д16АТ 0,5-10 мм
+---
+<ol>
+    {{#each list-1}}
+    <li>
+        <a href="{{href}}.html">{{text}}</a>
+    </li>
+    {{/each}}
+</ol>
