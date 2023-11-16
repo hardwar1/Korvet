@@ -18,18 +18,18 @@
     <meta name="og:image" content="">
     <meta name="og:url" content="">
     <!-- <link rel="apple-touch-icon" sizes="57x57" href="./files/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./files/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./files/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./files/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./files/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./files/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./files/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./files/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./files/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./files/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./files/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./files/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./files/favicons/favicon-16x16.png"> -->
+  <link rel="apple-touch-icon" sizes="60x60" href="./files/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./files/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./files/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./files/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./files/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./files/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./files/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./files/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./files/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./files/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./files/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./files/favicons/favicon-16x16.png"> -->
     <!-- <link rel="manifest" href="./files/favicons/manifest.json"> -->
     <!-- <meta name="msapplication-TileImage" content="./files/favicons/ms-icon-144x144.png"> -->
     <meta name="msapplication-TileColor" content="#ffffff">
@@ -42,10 +42,71 @@
 
     <link rel="stylesheet" href="./css/libs.css">
     <link rel="stylesheet" href="./css/main.css">
+    <title>навигация по страницам</title>
+
+    <style>
+        body {
+            background-color: #282727;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white !important;
+            margin-bottom: 30px;
+        }
+
+        ol {
+            padding-left: 30px !important;
+            list-style: decimal-leading-zero !important;
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 8px !important;
+        }
+
+        li::after,
+        li::before {
+            content: unset !important;
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 20px;
+            background-image: linear-gradient(to right, red, red 50%, white 50%);
+            background-size: 200% 100%;
+            background-position: -100%;
+            background-color: white;
+            display: inline-block;
+            position: relative;
+            color: white;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: background-position 0.3s;
+        }
+
+        a:hover {
+            background-position: 0;
+            background-image: linear-gradient(to right, red, red 50%, white 50%);
+            background-color: white;
+        }
+
+        p {
+            color: red;
+            font-size: 16px;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container content-block margins-l text-l">
+    <div class="container content-block">
+        <h1>
+            Навигация по страницам верстки
+        </h1>
+
         <ol>
             <li>
                 <a href="index.html">Главная</a>
@@ -58,6 +119,10 @@
             </li>
         </ol>
 
+
+        <p>
+            для того чтобы вернуться на эту страницу кликнете по логотипу в шапке сайта
+        </p>
     </div>
 </body>
 
