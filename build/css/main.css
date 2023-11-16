@@ -1772,7 +1772,11 @@ h3,
   background-size: cover;
   background-position: center top;
   position: relative;
-  min-height: 100vh;
+}
+@media (min-width: 992px) {
+  .hero {
+    min-height: 100vh;
+  }
 }
 .hero__slide {
   overflow: hidden;

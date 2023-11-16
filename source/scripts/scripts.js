@@ -397,11 +397,14 @@ window.addEventListener("DOMContentLoaded", () => {
   groupsMoreBtns();
 
   function breadcrumbsBtns() {
+    const breadcrumbsBody = document.querySelector('.breadcrumbs__inner');
+    if(!breadcrumbsBody) return;
+
     const toEndBtn = document.querySelector('.breadcrumbs__btn--to-end');
     const toStartBtn = document.querySelector('.breadcrumbs__btn--to-start');
-    const breadcrumbsBody = document.querySelector('.breadcrumbs__inner');
 
     function showHideBtn() {
+
       if (breadcrumbsBody.scrollLeft == 0) {
         toStartBtn.classList.remove('show')
       } else {

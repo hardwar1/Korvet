@@ -5,7 +5,10 @@
   background-size: cover;
   background-position: center top;
   position: relative;
-  min-height: 100vh;
+
+  @media (min-width: $desktops-sm) {
+    min-height: 100vh;
+  }
 
   &__slider-wrapper {
   }
